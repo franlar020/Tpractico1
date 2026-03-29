@@ -1,7 +1,6 @@
 package unlar.edu.ar.objets;
 
 public class Estudiante {
-    
     private String legajo;
     private String nombre;
     private String carrera;
@@ -9,7 +8,6 @@ public class Estudiante {
 
     public Estudiante() {}
 
-  
     public Estudiante(String legajo, String nombre, String carrera, String email) {
         this.legajo = legajo;
         this.nombre = nombre;
@@ -17,7 +15,7 @@ public class Estudiante {
         this.email = email;
     }
 
-    
+    // Getters y Setters corregidos
     public String getLegajo() { return legajo; }
     public void setLegajo(String legajo) { this.legajo = legajo; }
 
@@ -30,11 +28,8 @@ public class Estudiante {
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
 
-    // // --- Aqui van los GETTERS Y SETTERS xd
-
-    
     @Override
     public String toString() {
-        return "Estudiante [Legajo=" + legajo + ", Nombre=" + nombre + ", Carrera=" + carrera + "]";
+        return "Estudiante [Legajo=" + legajo + ", Nombre=" + nombre + "]";
     }
 }
